@@ -77,7 +77,7 @@ void drawbanners()
     VPutChar('.');
     if (group)
         VPutString(group);
-    if ((curtime = timestr(time((long *)0))))
+    if ((curtime = timestr(time(0))))
         VMPutString(0, 79 - strlen(curtime), curtime);
     VStandEnd();
     VMPutString(LINES - 1, 0,

@@ -986,7 +986,7 @@ static int cmpfil(char *d1, char *f1, char *d2, char *f2)
 {
     register int i;
     int fd1, fd2;
-    char buf1[512], buf2[512];
+    char buf1[5120], buf2[5120];
     int n1, n2, rez;
 
     sprintf(buf1, "%s/%s", d1, f1);
