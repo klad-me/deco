@@ -1,3 +1,5 @@
+#include <time.h>
+
 /* width of directory window */
 
 #define PAGEWID (widewin ? 77 : 39)
@@ -88,7 +90,7 @@ int strbcmp(char *s, char *b);
 int match(char *name, char *pat);
 int getmenu(void);
 void downmenu(struct menu *m);
-char *timestr(long tim);
+char *timestr(time_t tim);
 int hexview(char *filename);
 void viewpage(int line, int col);
 void viewchar(int c);

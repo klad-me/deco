@@ -21,7 +21,7 @@
 
 static char pattern[] = "00-Mon-1900 00:00:00";
 
-char *timestr(long tim)
+char *timestr(time_t tim)
 {
     struct tm *t     = localtime(&tim);
     register char *p = pattern;
